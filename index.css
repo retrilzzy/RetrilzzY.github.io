@@ -30,7 +30,6 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 50px;
     transform: translateY(-50%);
     margin-top: 45vh;
@@ -51,6 +50,7 @@ header {
         margin-right: auto;
         margin-left: auto;
         max-width: 480px;
+        align-items: center;
     }
 }
 
@@ -95,7 +95,7 @@ header p {
     font-weight: bold;
     padding: 6px;
     font-size: clamp(18px, 3vmin, 25px);
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 @keyframes bio {
@@ -285,6 +285,43 @@ main {
         --c: min(var(--m-columns, 2), var(--template-columns));
         --r: var(--m-rows, 2);
     }
+}
+
+#discord {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+}
+
+#discord .content {
+    flex-direction: row;
+}
+
+#discord .meta {
+    margin-top: 0;
+    margin-left: 14px;
+}
+
+#dot {
+    display: inline-block;
+    margin-right: .1em;
+    border-radius: 50%;
+    width: .6em;
+    height: .6em;
+}
+
+#discord .rpc {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+#discord .rpc .meta {
+    color: #000b;
 }
 
 #large_image {
