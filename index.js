@@ -1,3 +1,4 @@
+// bg behavior
 (window.setScroll = () => document.body.style.setProperty('--scroll', scrollY / innerHeight))();
 ['scroll', 'resize'].forEach(e => addEventListener(e, setScroll));
 
@@ -15,6 +16,7 @@ addEventListener('mousemove', ({ clientX, clientY }) => {
     setTimeout(() => bg.style.transition = '', 100);
 }));
 
+// scroll arrow
 document.querySelector('#arrow svg').addEventListener('click', () => {
     const start = performance.now();
 
@@ -27,4 +29,13 @@ document.querySelector('#arrow svg').addEventListener('click', () => {
     function easeOutCubic(x) {
         return 1 - Math.pow(1 - x, 3);
     }
+});
+
+// random bg
+var images = ['/bg0.webp', '/bg1.webp', '/bg2.webp', '/bg3.jpg', '/bg4.jpg', '/bg5.jpg' , '/bg6.jpg'];
+
+var randomImage = Math.floor(Math.random() * 7);
+
+$(document).ready(function() {
+  $("#bg").css("background-image", "url('/backgrounds" + images[randomImage] + "')");
 });
