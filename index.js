@@ -34,7 +34,7 @@ document.querySelector('#arrow svg').addEventListener('click', () => {
 // random bg
 var images = ['/bg0.webp', '/bg1.webp', '/bg2.webp', '/bg3.jpg', '/bg4.jpg', '/bg5.jpg' , '/bg6.jpg', '/bg7.webp', '/bg8.webp', '/bg9.jpg', '/bg10.jpg'];
 
-var randomImage = Math.floor(Math.random() * 8);
+var randomImage = Math.floor(Math.random() * 11);
 
 $(document).ready(function() {
   $("#bg").css("background-image", "url('/backgrounds" + images[randomImage] + "')");
