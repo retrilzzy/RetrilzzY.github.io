@@ -36,6 +36,4 @@ var images = ['/bg0.webp', '/bg1.webp', '/bg2.webp', '/bg3.jpg', '/bg4.jpg', '/b
 
 var randomImage = Math.floor(Math.random() * 11);
 
-$(document).ready(function() {
-  $("#bg").css("background-image", "url('/backgrounds" + images[randomImage] + "')");
-});
+document.querySelector(':root').style.setProperty("--background", "image-set(url('/backgrounds" + images[randomImage] + "') type('image/webp'))");

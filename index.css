@@ -7,7 +7,6 @@
 body {
     margin: 0 auto;
     min-width: 320px;
-    background: rgb(31, 31, 31);
     max-width: min(1280px, 100% - 100px);
 }
 
@@ -24,7 +23,7 @@ body {
     z-index: -1;
     filter: blur(clamp(0px, calc(50px * var(--scroll, 0) + -5px), 10px)) brightness(clamp(.7, calc(-.5 * var(--scroll, 0) + .85), .8));
     inset: -30px;
-    background: center/cover no-repeat;
+    background: rgb(31, 31, 31) var(--background) center/cover no-repeat;
 }
 
 header {
