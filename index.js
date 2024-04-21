@@ -32,8 +32,8 @@ document.querySelector('#arrow svg').addEventListener('click', () => {
 });
 
 // random bg
-var images = ['/bg0.webp', '/bg1.webp', '/bg2.webp', '/bg3.jpg', '/bg4.jpg', '/bg5.jpg' , '/bg6.jpg', '/bg7.webp', '/bg8.webp', '/bg9.jpg', '/bg10.jpg'];
+var images = ['/bg0.webp', '/bg1.webp', '/bg2.webp', '/bg3.jpg', '/bg4.jpg', '/bg5.jpg' , '/bg6.jpg', '/bg7.webp', '/bg8.webp', '/bg9.jpg'];
 
-var randomImage = Math.floor(Math.random() * 11);
+var randomImage = Math.floor(Math.random() * 10);
 
 document.querySelector(':root').style.setProperty("--background", "image-set(url('/backgrounds" + images[randomImage] + "') type('image/webp'))");
