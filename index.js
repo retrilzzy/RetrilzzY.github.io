@@ -37,3 +37,30 @@ var images = ['/bg0.webp', '/bg1.webp', '/bg2.webp', '/bg3.jpg', '/bg4.jpg', '/b
 var randomImage = Math.floor(Math.random() * 10);
 
 document.querySelector(':root').style.setProperty("--background", "image-set(url('/backgrounds" + images[randomImage] + "') type('image/webp'))");
+
+// loader
+function startLoader() {
+    const loader = document.getElementById('loader');
+    loader.classList.remove('hidden');
+}
+
+function finishLoader() {
+    const loader = document.getElementById('loader');
+    loader.classList.add('hidden');
+}
+
+window.addEventListener('load', () => {
+    finishLoader();
+});
+
+window.addEventListener('beforeunload', () => {
+    startLoader();
+});
+
+window.addEventListener('popstate', () => {
+    finishLoader();
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+    finishLoader()
+});
