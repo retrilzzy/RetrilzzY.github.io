@@ -312,6 +312,10 @@ a {
     text-decoration: none;
 }
 
+img {
+  pointer-events: none;
+}
+
 b+p {
     color: #000b;
 }
