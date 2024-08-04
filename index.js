@@ -36,7 +36,7 @@ var images = ['/bg0.webp', '/bg1.webp', '/bg2.webp', '/bg3.jpg', '/bg4.jpg', '/b
 
 var randomImage = Math.floor(Math.random() * images.length);
 
-document.querySelector(':root').style.setProperty("--background", "image-set(url('/backgrounds" + images[randomImage] + "') type('image'))");
+document.querySelector(':root').style.setProperty("--background", "image-set(url('/backgrounds" + images[randomImage] + "'))");
 
 // loader
 function startLoader() {
