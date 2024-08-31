@@ -2,6 +2,7 @@
     font-weight: 500;
     line-height: 1.5;
     font-family: Inter, system-ui, sans-serif;
+    --background: url('/backgrounds/bg0.webp');
 }
 
 a {
