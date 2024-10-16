@@ -2,7 +2,7 @@
     font-weight: 500;
     line-height: 1.5;
     font-family: Inter, system-ui, sans-serif;
-    --background: url('/backgrounds/bg0.webp');
+    --background: url('/backgrounds/bg5.webp');
 }
 
 a {
@@ -14,7 +14,7 @@ img {
 }
 
 b+p {
-    color: #000b;
+    color: #d4dae0;
 }
 
 h1,
@@ -51,7 +51,7 @@ body {
     z-index: -1;
     filter: blur(clamp(0px, calc(50px * var(--scroll, 0) + -5px), 10px)) brightness(clamp(.7, calc(-.5 * var(--scroll, 0) + .85), .8));
     inset: -30px;
-    background: rgb(31, 31, 31) var(--background) center/cover no-repeat;
+    background: #0D1117 var(--background) center/cover no-repeat;
 }
 
 .loader {
@@ -237,10 +237,10 @@ main {
     grid-column: span var(--c);
     transition: transform .2s linear, background-color .2s linear;
     border-radius: 24px;
-    background-color: rgba(179, 195, 210, 0.667);
+    background-color: rgba(13, 17, 23, 0.855);
     height: calc(var(--square-size) * var(--r) + var(--gap) * (var(--r) - 1));
     overflow: hidden;
-    color: #000;
+    color: #F0F6FC;
 }
 
 @media (width < 1300px) {
@@ -262,7 +262,7 @@ main {
 }
 
 .widget:hover {
-    background-color: rgba(179, 195, 210, 0.800);
+    background-color: rgba(29, 36, 47, 0.8);
 }
 
 .widget:active {
@@ -276,7 +276,7 @@ main {
     padding: 24px;
     width: 100%;
     height: 100%;
-    color: #000;
+    color: #F0F6FC;
 }
 
 .widget a[href='#'] {
@@ -307,7 +307,7 @@ main {
     width: 40px;
     height: 40px;
     overflow: hidden;
-    color: #fff;
+    color: #F0F6FC;
 }
 
 .widget .icon svg {
