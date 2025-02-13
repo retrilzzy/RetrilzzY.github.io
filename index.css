@@ -2,7 +2,7 @@
     font-weight: 500;
     line-height: 1.5;
     font-family: Inter, system-ui, sans-serif;
-    --background: url('/backgrounds/bg2.webp');
+    --background: url('./public/bg.jpg');
 }
 
 a {
@@ -51,7 +51,7 @@ body {
     z-index: -1;
     filter: blur(clamp(0px, calc(50px * var(--scroll, 0) + -5px), 10px)) brightness(clamp(.7, calc(-.5 * var(--scroll, 0) + .85), .8));
     inset: -30px;
-    background: #0D1117 var(--background) center/cover no-repeat;
+    background: #3c3c3c var(--background) center/cover no-repeat;
 }
 
 .loader {
@@ -262,7 +262,7 @@ main {
 }
 
 .widget:hover {
-    background-color: rgba(29, 36, 47, 0.8);
+    background-color: rgba(19, 24, 31, 0.7);
 }
 
 .widget:active {
