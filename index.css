@@ -263,11 +263,12 @@ main {
 }
 
 .widget:hover {
-    background-color: rgba(10, 12, 16, 0.8);
+    background-color: rgba(10, 12, 16, 0.9);
+    transform: perspective(300px) translateZ(-7px);
 }
 
 .widget:active {
-    transform: perspective(300px) translateZ(-10px);
+    transform: perspective(300px) translateZ(-15px);
 }
 
 .widget a {
